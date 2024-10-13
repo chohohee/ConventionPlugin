@@ -11,6 +11,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.chh.convention.core.designsystem.ConventionPluginTheme
 
 @Composable
+internal fun HomeRoute() {
+    HomeScreen()
+}
+
+@Composable
 fun HomeScreen() {
     Column(
         modifier = Modifier.fillMaxSize(),

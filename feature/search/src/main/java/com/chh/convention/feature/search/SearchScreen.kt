@@ -8,16 +8,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.chh.convention.core.designsystem.ConventionPluginTheme
 
 @Composable
-fun SearchScreen() {
+internal fun SearchRoute(
+    searchViewModel: SearchViewModel = hiltViewModel()
+) {
+    val message = searchViewModel.route.message
+    SearchScreen(message)
+}
+
+@Composable
+fun SearchScreen(
+    message: String = "empty"
+) {
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text("Search")
+        Text("Search $message")
     }
 }
 
