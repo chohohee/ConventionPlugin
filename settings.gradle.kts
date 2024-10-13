@@ -18,3 +18,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "ConventionPlugin"
 include(":app")
+include(":feature:main")
+include(":feature:home")
+include(":feature:search")
