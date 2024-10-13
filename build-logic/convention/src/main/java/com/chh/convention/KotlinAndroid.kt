@@ -9,6 +9,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 internal fun Project.configureKotlinAndroid() {
     extensions.configure<BaseExtension> {
+        pluginManager.apply("org.jetbrains.kotlin.android")
+
         compileSdkVersion(Versions.COMPILE_SDK_VERSION)
 
         defaultConfig {
