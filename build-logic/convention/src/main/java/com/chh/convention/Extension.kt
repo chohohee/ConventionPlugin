@@ -21,6 +21,9 @@ internal fun <T> DependencyHandler.implementation(
     dependencyNotation: Optional<Provider<T>>
 ): Dependency? = add("implementation", dependencyNotation.get())
 
+fun DependencyHandler.implementation(dependencyNotation: Any): Dependency? =
+    add("implementation", dependencyNotation)
+
 internal fun <T> DependencyHandler.testImplementation(
     dependencyNotation: Optional<Provider<T>>
 ): Dependency? = add("testImplementation", dependencyNotation.get())
