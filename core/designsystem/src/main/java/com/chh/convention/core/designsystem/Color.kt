@@ -1,4 +1,4 @@
-package com.chh.convention.feature.main.ui.theme
+package com.chh.convention.core.designsystem
 
 import androidx.compose.ui.graphics.Color
 

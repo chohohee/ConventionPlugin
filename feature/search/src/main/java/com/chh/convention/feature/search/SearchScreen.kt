@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.chh.convention.core.designsystem.ConventionPluginTheme
 
 @Composable
 fun SearchScreen() {
@@ -24,5 +25,7 @@ fun SearchScreen() {
 @Preview(showBackground = true)
 @Composable
 fun SearchPreview() {
-    SearchScreen()
+    ConventionPluginTheme {
+        SearchScreen()
+    }
 }
