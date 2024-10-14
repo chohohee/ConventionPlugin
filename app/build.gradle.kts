@@ -1,6 +1,5 @@
 plugins {
     id("chh.android.application")
-    id("chh.hilt.android")
 }
 
 android {
